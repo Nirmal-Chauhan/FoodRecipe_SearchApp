@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+.main{
+ margin: 0;
+ padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
+  background-color: blue;
   display: flex;
-  flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 9vh;
+    padding: 5px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:43%;
+  padding: 15px;
+}
+.right div{
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.right div:hover{
+  background-color: rgb(50, 50, 80);
+}
+
+.left{
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+  width:14%
+}
+.search{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  
+  
+}
+
+.search input{
+  width:25rem;
+  height:20px;
+  border-radius: 5px;
+}
+
+.slider{
+  margin: .5rem;
+  /* text-align: center; */
+  align-items: center;
+  perspective: 800px;
+  margin-left: 5rem;
+}
+
+.slider img{
+  border-radius: 5%;
+  border:2px solid blue;
+  transition: transform .3s ease;
+}
+
+.slider img:hover{
+  transform: translateZ(100px);
+  border:2px solid yellow
+}
+.slider2 img{
+  border-radius: 5%;
+  border:2px solid blue;
+  transition: transform .3s ease;
+  margin-top: .5rem;
+  margin-left: 4rem;
+}
+
+.slider2 img:hover{
+  transform: translateZ(80px);
+  border:2px solid yellow
+}
+
+.slider2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 800px;
+
+}
+
+.btn{
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(226, 248, 101);
+  border-radius: 5px;
+  margin: 1.5rem;
+  border: 2px solid blue;
+}
+
+.img{
+  perspective: 800px;
+
+}
+
+.img img{
+  border-radius: 5%;
+  border:2px solid blue;
+  transition: transform .3s ease;
+}
+.img img:hover{
+  transform: translateZ(80px);
+  border:2px solid yellow
+}
+
+.link{
+  text-decoration: none;
   color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
